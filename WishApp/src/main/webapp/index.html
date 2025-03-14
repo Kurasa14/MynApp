@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello!</title>
+<style>
+	body 
+	{
+		background: linear-gradient(deg, red, orange, green, blue, indigo, violet);
+		background-size: 400% 400%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-dierction: column;
+		margin: 0;
+		animation: colorAnimation 10s ease infinite;
+	}
+	@keyframes colorAnimation 
+	{
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100%{ background-position: 0% 50%; }
+		
+	}
+	
+	h1 
+	{
+		font-family:cursive;
+		font-size: 40px;
+		color: black;
+		text-shadow: 2px 2px 4px yellow;
+	}
+	.btn 
+	{
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: green;
+	color: black;
+	border: 2px solid yellow;
+	cursor: pointer;
+	font-family: cursive;
+	}
+	.btn:hover 
+	{
+	background-color: yellow;
+	color: black;
+	}
+</style>
+</head>
+<body>
+	<h1>Happy Holi, My Love!</h1>
+	<a href="WishServlet"><button class="btn">Click to see my art</button></a>
+</body>
+</html>
